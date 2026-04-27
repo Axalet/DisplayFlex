@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Display Flex Práctica</title>
+    <link href="img/Favicon.png" rel="icon">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(230, 59, 59);
+        }
+
+        .elemento {
+            padding: 10px;
+            margin: 60px;
+            border: 10px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img {
+            width: 40vw;
+            height: 100%;
+        }
+
+        .elemento:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="flex">
+        <div class="elemento"><img src="img/Teto1 sin fondo.png"></div>
+        <div class="elemento"><img src="img/Teto2 sin fondo.png"></div>
+        <div class="elemento"><img src="img/Teto3 sin fondo.png"></div>
+    </div>
+
+</body>
+
+</html>
